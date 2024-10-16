@@ -1,0 +1,16 @@
+{
+    "name": "Go Dev Environment",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "golang.go",
+      "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+      "go.toolsManagement.autoUpdate": true,
+      "go.useLanguageServer": true,
+      "go.lintTool": "golangci-lint"
+    },
+    "postCreateCommand": "go mod tidy",
+    "remoteUser": "vscode"
+  }
+  
